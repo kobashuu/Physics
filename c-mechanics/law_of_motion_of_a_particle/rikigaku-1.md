@@ -10,14 +10,16 @@
  });
 </script>
 
-# 力学演習
-### 2.1 鉛直投げ上げ運動(抵抗のある場合)
+# 質点の運動法則
+## 2.1 鉛直投げ上げ運動(抵抗のある場合)
 
 速度に比例する抵抗がある場合、変数分離法で解く。特に問題はない。
 速度の二乗に比例する抵抗がある場合面倒なので演習しておくべき。(過去問で出てる)
+
 <br>
-<img width="300" alt="rkigaku-02" src="./images/rikigaku-02.jpg">
-<img width="300" alt="rkigaku-03" src="./images/rikigaku-03.jpg">
+
+<img width="300" alt="rikigaku-02" src="./images/rikigaku-02.jpg">
+<img width="300" alt="rikigaku-03" src="./images/rikigaku-03.jpg">
 
 $ t \rightarrow \infty $ の極限を取ると
 $$ v_{\infty} = - \frac{g}{k} $$
