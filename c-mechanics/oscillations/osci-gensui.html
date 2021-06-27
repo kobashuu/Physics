@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>osci-gensui.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({in
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+<h1 id="%E6%8C%AF%E5%8B%95">振動</h1>
+<h2 id="%E6%B8%9B%E8%A1%B0%E6%8C%AF%E5%8B%95">減衰振動</h2>
+<p>質点に、原点に向かう力$-cx$のほかに、速度に比例する抵抗$-k \dot x$がはたらく場合を考える。
+<br>
+運動方程式は
+$$ m \ddot x = - cx - 2mk \dot x (k &gt; 0) $$
+で与えられる。書き換えると、$c = m \omega _ 0 ^2 $ とおいて、
+$$ \ddot x + 2k \dot x + \omega_0 ^2 x = 0 $$
+$ x = e^{ \lambda t} $ を代入すると、
+$$ \lambda^2 e ^{\lambda t} + 2k \lambda e^{\lambda t} + \omega_0 e^{\lambda t} = 0 $$
+$$ \lambda ^ 2 + 2k\lambda + \omega_0 = 0 $$
+$$ \lambda = -k \pm \sqrt{k^2-\omega_0^2} $$
+<br>
+次の3つの場合を考察する。
+<br>
+(i) $ k &lt; \omega_0 $のとき(摩擦抵抗が小さいとき)
+$A, B$を複素係数とすると、
+$$ x = e^{-kt} { A \exp(i \sqrt{ \omega_0^2 - k^2 }t) + B \exp{(-i\sqrt{\omega_0^2 - k^2 } t ) }  }$$
+$$ e^{-kt} { A ( \cos \sqrt{ \omega_0^2 - k^2 } t + i \sin \sqrt{ \omega_0^2 - k^2 } t ) + B ( \cos \sqrt{ \omega_0^2 - k^2 } t - i \sin \sqrt{ \omega_0^2 - k^2 } t )} $$
+$ i(A-B) = A',A + B = B' $とおいて書き直すと、
+$$ e^{-kt} { A' \sin \sqrt{ \omega_0^2 - k^2} t + B' \cos \sqrt{ \omega_0^2 - k^2 } t } $$
+$$ \dot x = -k e^{-kt} { A' \sin \sqrt{ \omega_0^2 - k^2} t + B' \cos \sqrt{ \omega_0^2 - k^2 } t } + e^{-kt} { \sqrt{ \omega_0^2 - k^2} A' \cos \sqrt{ \omega_0^2 - k^2} t + \sqrt{ \omega_0^2 - k^2} B' \sin \sqrt{ \omega_0^2 - k^2 } t } $$
+初期条件$ t=0, x=0, \dot x=0 $を満たすように$A, B$を定めると、
+$$ A' = \frac{ v_0 + kx_0 }{ \sqrt{ \omega_0^2 - k^2 } }, B' = x_0 $$
+$$ e^{-kt} { \frac{ v_0 + kx_0 }{ \sqrt{ \omega_0^2 - k^2 } } \sin \sqrt{ \omega_0^2 - k^2} t + x_0 \cos \sqrt{ \omega_0^2 - k^2 } t } $$
+(ii) $ k&gt;\omega_0 $のとき(摩擦抵抗が大きいとき)
+<br>
+根号の中が実数なのでそのまま解けば良い
+<br>
+一般解は
+$$ x = e ^{-kt} { A \exp(\sqrt{k^2-\omega_0^2}t) + B \exp(-\sqrt{k^2-\omega_0^2}t) } $$
+$$ v = -k e ^{-kt} { A \exp(\sqrt{k^2-\omega_0^2}t) + B \exp(-\sqrt{k^2-\omega_0^2}t)} + e ^{-kt} { A\sqrt {k^2-\omega_0^2}\exp(\sqrt{k^2-\omega_0^2}t) - B\sqrt{k^2-\omega_0^2}\exp(-\sqrt{k^2-\omega_0^2}t) } $$
+初期条件は$(t=0, x=x_0, v=v_0)$
+$$ A + B = x_0, A - B = \frac{v_0+kx_0}{\sqrt{k^2-\omega_0^2}} $$
+連立して解いて、
+$$ A = \frac{1}{2}{ x_0 + \frac{v_0+kx_0}{\sqrt{k^2-\omega_0^2}} }, B = \frac{1}{2}{ x_0 - \frac{v_0+kx_0}{\sqrt{k^2-\omega_0^2}} } $$
+代入してまとめると、
+$$ x = e^{-kt}{x_0cosh\sqrt{k^2-\omega_0^2}t + \frac{v_0+kx_0}{\sqrt{k^2-\omega_0^2}}sinh\sqrt{k^2-\omega_0^2}t} $$
+$$ v = e^{-kt}{v_0cosh\sqrt{k^2-\omega_0^2}t - \frac{kv_0+x_0\omega_0^2}{\sqrt{k^2-\omega_0^2}}sinh\sqrt{k^2-\omega_0^2}t} $$</p>
+<p>(iii) $k=\omega_0$の場合
+<br>
+上の式から$ \omega_0 \rightarrow k $の極限をとる。
+$$ x = e^{-kt} { x_0 + ( v_0 + kx_0 ) t } $$
+$$ \dot x = e^{-kt} { v_0 - (x_0 k^2 + kv_0 ) t } $$
+<br></p>
+<img width="400" alt="rikigaku-89" src="./images/rikigaku-93.jpg">
+<img width="400" alt="rikigaku-89" src="./images/rikigaku-94.jpg">
+<img width="400" alt="rikigaku-89" src="./images/rikigaku-95.jpg">
+<img width="400" alt="rikigaku-89" src="./images/rikigaku-96.jpg">
+</body>
+</html>
