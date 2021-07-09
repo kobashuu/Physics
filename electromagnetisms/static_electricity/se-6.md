@@ -20,4 +20,6 @@ Poissonの方程式を使ってポテンシャルから電荷分布を求める�
 <br>
 
 
-<img width="400" alt="electromagnetism-16" src="./images/se-9/Electromagnetism-16.jpg">
+<img width="400" alt="electromagnetism-12" src="./images/se-6/Electromagnetism-12.jpg">
+<img width="400" alt="electromagnetism-13" src="./images/se-6/Electromagnetism-13.jpg">
+<img width="400" alt="electromagnetism-13" src="./images/se-6/Electromagnetism-14.jpg">

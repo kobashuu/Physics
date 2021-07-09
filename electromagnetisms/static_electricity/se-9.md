@@ -12,7 +12,7 @@
 </script>
 
 # 静電気
-## 1.9 Coulomb力(4)
+## 1.9 Coulomb力による単振動
 
 単振動の復原力がCoulomb力の場合。
 <br>
