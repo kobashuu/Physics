@@ -12,10 +12,9 @@
 </script>
 
 # 静電気
-## 1.30 並列/直列につないだときの静電容量 
+## 2.1 抵抗率 
 
-定義通り。
+定義通りに計算。
 <br>
-Aに溜まってる電荷はどちらの表式でも等しいはずだから、等式を使ってAP間の電位を求める。<br>
 
-<img width="400" alt="electromagnetism-46" src="./images/se-30/Electromagnetism-46.jpg">
+<img width="400" alt="electromagnetism-63" src="./images/sc-1/Electromagnetism-63.jpg">

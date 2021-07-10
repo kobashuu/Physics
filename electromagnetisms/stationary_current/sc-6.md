@@ -12,10 +12,9 @@
 </script>
 
 # 静電気
-## 1.30 並列/直列につないだときの静電容量 
+## 2.6 正方形対角線回路 
 
-定義通り。
+定義通りに計算するだけ。
 <br>
-Aに溜まってる電荷はどちらの表式でも等しいはずだから、等式を使ってAP間の電位を求める。<br>
 
-<img width="400" alt="electromagnetism-46" src="./images/se-30/Electromagnetism-46.jpg">
+<img width="400" alt="electromagnetism-67" src="./images/sc-4/Electromagnetism-67.jpg">

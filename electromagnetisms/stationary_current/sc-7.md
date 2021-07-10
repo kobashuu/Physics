@@ -12,10 +12,9 @@
 </script>
 
 # 静電気
-## 1.30 並列/直列につないだときの静電容量 
+## 2.7 抵抗の最大値 
 
-定義通り。
+$AP$間の抵抗を普通に求めてやって、微分して最大値を探す。
 <br>
-Aに溜まってる電荷はどちらの表式でも等しいはずだから、等式を使ってAP間の電位を求める。<br>
 
-<img width="400" alt="electromagnetism-46" src="./images/se-30/Electromagnetism-46.jpg">
+<img width="400" alt="electromagnetism-70" src="./images/sc-7/Electromagnetism-70.jpg">
