@@ -19,7 +19,7 @@ $ \mathrm{div} ( \mathbf{A} \times \mathbf{B} ) = \nabla \cdot ( \mathbf{A} \tim
 みたいな公式があって、覚え方は一個ずつずれるやつ。
 <br>
 <br>
-これを使ってBiot-Savartから導くのが正規で天才的な発想でベクトルポテンシャルを導いて発散を計算するのは丸ではないです。
+これを使って$ \mathrm{Biot-Savart} $から導くのが正規で天才的な発想でベクトルポテンシャルを導いて発散を計算するのは丸ではないです。
 <br>
 <br>
 
