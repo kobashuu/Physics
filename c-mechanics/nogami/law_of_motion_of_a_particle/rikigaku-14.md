@@ -26,9 +26,9 @@
     * 非斉次方程式を変分法で解く
 
 
-<img width="300" alt="rkigaku-43" src="./images/rikigaku-43.jpg">
-<img width="300" alt="rkigaku-44" src="./images/rikigaku-44.jpg">
-<img width="300" alt="rkigaku-45" src="./images/rikigaku-45.jpg">
-<img width="300" alt="rkigaku-46" src="./images/rikigaku-46.jpg">
-<img width="300" alt="rkigaku-47" src="./images/rikigaku-47.jpg">
-<img width="300" alt="rkigaku-48" src="./images/rikigaku-48.jpg">
+<img width="400" alt="rkigaku-43" src="./images/rikigaku-43.jpg">
+<img width="400" alt="rkigaku-44" src="./images/rikigaku-44.jpg">
+<img width="400" alt="rkigaku-45" src="./images/rikigaku-45.jpg">
+<img width="400" alt="rkigaku-46" src="./images/rikigaku-46.jpg">
+<img width="400" alt="rkigaku-47" src="./images/rikigaku-47.jpg">
+<img width="400" alt="rkigaku-48" src="./images/rikigaku-48.jpg">

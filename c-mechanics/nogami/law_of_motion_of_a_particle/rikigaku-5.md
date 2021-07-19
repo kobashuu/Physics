@@ -20,5 +20,5 @@
 
 <br>
 
-<img width="300" alt="rikigaku-16" src="./images/rikigaku-16.jpg">
-<img width="300" alt="rikigaku-17" src="./images/rikigaku-17.jpg">
+<img width="400" alt="rikigaku-16" src="./images/rikigaku-16.jpg">
+<img width="400" alt="rikigaku-17" src="./images/rikigaku-17.jpg">

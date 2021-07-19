@@ -20,4 +20,4 @@
 
 <br>
 
-<img width="300" alt="rikigaku-11" src="./images/rikigaku-11.jpg">
+<img width="400" alt="rikigaku-11" src="./images/rikigaku-11.jpg">

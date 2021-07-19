@@ -20,7 +20,7 @@
 
 <br>
 
-<img width="300" alt="rikigaku-12" src="./images/rikigaku-12.jpg">
-<img width="300" alt="rikigaku-13" src="./images/rikigaku-13.jpg">
-<img width="300" alt="rikigaku-14" src="./images/rikigaku-14.jpg">
-<img width="300" alt="rikigaku-15" src="./images/rikigaku-15.jpg">
+<img width="400" alt="rikigaku-12" src="./images/rikigaku-12.jpg">
+<img width="400" alt="rikigaku-13" src="./images/rikigaku-13.jpg">
+<img width="400" alt="rikigaku-14" src="./images/rikigaku-14.jpg">
+<img width="400" alt="rikigaku-15" src="./images/rikigaku-15.jpg">

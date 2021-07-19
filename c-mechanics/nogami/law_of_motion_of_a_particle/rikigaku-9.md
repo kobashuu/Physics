@@ -19,6 +19,6 @@
 
 <br>
 
-<img width="300" alt="rikigaku-28" src="./images/rikigaku-28.jpg">
-<img width="300" alt="rikigaku-29" src="./images/rikigaku-29.jpg">
-<img width="300" alt="rikigaku-30" src="./images/rikigaku-30.jpg">
+<img width="400" alt="rikigaku-28" src="./images/rikigaku-28.jpg">
+<img width="400" alt="rikigaku-29" src="./images/rikigaku-29.jpg">
+<img width="400" alt="rikigaku-30" src="./images/rikigaku-30.jpg">

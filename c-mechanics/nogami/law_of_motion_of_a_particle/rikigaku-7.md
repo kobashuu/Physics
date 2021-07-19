@@ -19,8 +19,8 @@
 
 <br>
 
-<img width="300" alt="rikigaku-21" src="./images/rikigaku-21.jpg">
-<img width="300" alt="rikigaku-22" src="./images/rikigaku-22.jpg">
-<img width="300" alt="rikigaku-23" src="./images/rikigaku-23.jpg">
-<img width="300" alt="rikigaku-24" src="./images/rikigaku-24.jpg">
-<img width="300" alt="rikigaku-25" src="./images/rikigaku-25.jpg">
+<img width="400" alt="rikigaku-21" src="./images/rikigaku-21.jpg">
+<img width="400" alt="rikigaku-22" src="./images/rikigaku-22.jpg">
+<img width="400" alt="rikigaku-23" src="./images/rikigaku-23.jpg">
+<img width="400" alt="rikigaku-24" src="./images/rikigaku-24.jpg">
+<img width="400" alt="rikigaku-25" src="./images/rikigaku-25.jpg">
