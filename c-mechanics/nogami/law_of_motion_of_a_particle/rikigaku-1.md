@@ -18,8 +18,8 @@
 
 <br>
 
-<img width="400" alt="rikigaku-02" src="./images/rikigaku-02.jpg">
-<img width="400" alt="rikigaku-03" src="./images/rikigaku-03.jpg">
+<img width="500" alt="rikigaku-02" src="./images/rikigaku-02.jpg">
+<img width="500" alt="rikigaku-03" src="./images/rikigaku-03.jpg">
 
 <br>
 

@@ -19,10 +19,10 @@
 そうすると$ \arctan x = \frac{\pi}{2} - \arctan \frac{1}{x}$
 
 <br>
-<img width="400" alt="rikigaku-04" src="./images/rikigaku-04.jpg">
-<img width="400" alt="rikigaku-05" src="./images/rikigaku-05.jpg">
-<img width="400" alt="rikigaku-06" src="./images/rikigaku-06.jpg">
-<img width="400" alt="rikigaku-07" src="./images/rikigaku-07.jpg">
-<img width="400" alt="rikigaku-08" src="./images/rikigaku-08.jpg">
-<img width="400" alt="rikigaku-09" src="./images/rikigaku-09.jpg">
-<img width="400" alt="rikigaku-10" src="./images/rikigaku-10.jpg">
+<img width="500" alt="rikigaku-04" src="./images/rikigaku-04.jpg">
+<img width="500" alt="rikigaku-05" src="./images/rikigaku-05.jpg">
+<img width="500" alt="rikigaku-06" src="./images/rikigaku-06.jpg">
+<img width="500" alt="rikigaku-07" src="./images/rikigaku-07.jpg">
+<img width="500" alt="rikigaku-08" src="./images/rikigaku-08.jpg">
+<img width="500" alt="rikigaku-09" src="./images/rikigaku-09.jpg">
+<img width="500" alt="rikigaku-10" src="./images/rikigaku-10.jpg">
