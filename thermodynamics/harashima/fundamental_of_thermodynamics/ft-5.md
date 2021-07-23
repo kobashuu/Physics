@@ -12,14 +12,12 @@
 </script>
 
 # 熱力学の基礎
-## 1.3 圧力係数の導出
+## 1.5 強磁性体の熱平衡と経験温度
 
 #### ポイント
 
-体積を$dV$とすれば$ dV = \beta V dT) $
-<br>
-体積を$dV$減らすためには$dp = \frac{dV}{\kappa V}$だけ圧力を下げなければならない。
+同じく熱平衡のときに等しくなる状態量→経験温度
 <br>
 <br>
 
-<img width="600" alt="Harashima-7" src="./images/Harashima-07.jpg">
+<img width="600" alt="Harashima-10" src="./images/Harashima-10.jpg">

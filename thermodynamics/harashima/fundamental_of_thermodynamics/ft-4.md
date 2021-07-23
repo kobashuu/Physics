@@ -12,12 +12,13 @@
 </script>
 
 # 熱力学の基礎
-## 1.5 強磁性体の熱平衡と経験温度
+## 1.4 熱平衡と経験温度
 
 #### ポイント
 
-同じく熱平衡のときに等しくなる状態量→経験温度
+熱平衡のときに等しくなる$p,V$で決まる量→経験温度
 <br>
 <br>
 
-<img width="600" alt="Harashima-10" src="./images/Harashima-10.jpg">
+<img width="600" alt="Harashima-8" src="./images/Harashima-08.jpg">
+<img width="600" alt="Harashima-9" src="./images/Harashima-09.jpg">
