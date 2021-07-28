@@ -13,7 +13,7 @@
 </script>
 
 # 熱力学第2法則 エントロピー
-## 3.6 $\mathrm{Calusius}$の原理 → $\mathrm{Kelvin-Planck}$の原理($\mathrm{Carnot}$サイクルの存在を仮定しないで)
+## 3.6 $\mathrm{Clausius}$の原理 → $\mathrm{Kelvin-Planck}$の原理($\mathrm{Carnot}$サイクルの存在を仮定しないで)
 
 #### ポイント
 

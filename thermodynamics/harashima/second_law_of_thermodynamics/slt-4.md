@@ -13,7 +13,7 @@
 </script>
 
 # 熱力学第2法則 エントロピー
-## 3.4 $\mathrm{Calusius}$の原理 → $\mathrm{Kelvin-Planck}$の原理
+## 3.4 $\mathrm{Clausius}$の原理 → $\mathrm{Kelvin-Planck}$の原理
 
 #### ポイント
 
